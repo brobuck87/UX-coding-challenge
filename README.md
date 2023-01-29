@@ -23,7 +23,8 @@ Note: the red text on each page is not part of the UI (don't include it on the p
 
 ### Instructions:
 
-1. Clone this repo, everything you need is in this repo including the assets used in the mockup.
-2. Using the starter files, build the prototype.
+1. Fork or [download](https://github.com/xtianares/UX-coding-challenge/archive/refs/heads/main.zip) this repo, everything you need is in this repo including the assets used in the mockup.
+2. Using the included starter files, build the sign-in pages.
 3. Have fun with it, you can add additional features if you like.
-4. Once you're done create your own Github repo and send us the link
+4. When you're done, commit your changes to your own github repo and send us a link.
+5. You can also send us a .zip file of the project if you can't create your own github repo.

@@ -12,16 +12,16 @@ Your task is to build a simple and responsive sign-in page using the Figma proto
 
 ### What we're looking for?
 
-The completed pages should very closely resemble the prototype's design and should have the functionalities. The acceptance criteria are below.
+The completed pages should closely resemble the prototype's design and functionality.
 
-- The pages needs to be responsive (sign-in page and successfully signed in page).
+- The pages needs to be responsive (sign-in page and successfully signed-in page).
 - The sign-up box needs to be horizontally and vertically centered on the page.
 - Simple form validation, both email and password are required in order for the form to be submitted.
   - Form validation upon submission (required)
-  - On field onBlur event validation (not required but nice to have)
+  - Field onBlur event validation (not required but nice to have)
 - Show/hide password functionality (required)
 
-Note: the red text on each page is not part of the UI (don't include it on the page you build), it's there to provide more info and a way to go back to the start page
+**Note:** the red text on each page is not part of the UI (don't include it on the page you build), it's there to provide more info and a way to go back to the start page.
 
 ### Instructions:
 

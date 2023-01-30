@@ -12,12 +12,14 @@ Your task is to build a simple and responsive sign-in page using the Figma proto
 
 ### What we're looking for?
 
-The completed pages should very closely resemble the prototype's design and should have the functionalities listed below.
+The completed pages should very closely resemble the prototype's design and should have the functionalities. The acceptance criteria are below.
 
-- Simple form validation, both email and password is required in order for the form to be submitted.
+- The pages needs to be responsive (sign-in page and successfully signed in page).
+- The sign-up box needs to be horizontally and vertically centered on the page.
+- Simple form validation, both email and password are required in order for the form to be submitted.
   - Form validation upon submission (required)
-  - Inline form validation (not required)
-- Show/hide password functionality
+  - On field onBlur event validation (not required but nice to have)
+- Show/hide password functionality (required)
 
 Note: the red text on each page is not part of the UI (don't include it on the page you build), it's there to provide more info and a way to go back to the start page
 
@@ -25,6 +27,6 @@ Note: the red text on each page is not part of the UI (don't include it on the p
 
 1. Fork or [download](https://github.com/xtianares/UX-coding-challenge/archive/refs/heads/main.zip) this repo, everything you need is in this repo including the assets used in the mockup.
 2. Using the included starter files, build the sign-in pages.
-3. Have fun with it, you can add additional features if you like.
+3. Have fun with it, you can add additional features if you're being adventurous.
 4. When you're done, commit your changes to your own github repo and send us a link.
 5. You can also send us a .zip file of the project if you can't create your own github repo.

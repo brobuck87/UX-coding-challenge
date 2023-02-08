@@ -16,7 +16,7 @@ The completed pages should closely resemble the prototype's design and functiona
 
 - The pages need to be responsive (sign-in page and successfully signed-in page).
 - The sign-up box needs to be horizontally and vertically centered on the page and is mobile friendly.
-- Simple form validation, both email and password are required in order for the form to be submitted.
+- Simple form validation, both email and password are required in order for the form to be submitted and display the signed-in.html page.
   - Form validation upon submission (required)
   - Field onBlur event validation (not required but nice to have)
 - Show/hide password functionality (required)

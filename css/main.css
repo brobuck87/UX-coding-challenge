@@ -1,8 +1,237 @@
 /* Main CSS file */
 body {
-  padding: 0;
-  margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   font-family: "Open Sans", sans-serif;
+  background: linear-gradient(45deg, #a58bd5, #a2e5eb);
+  padding: 0px;
+  margin: 0px;
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+
+.email-text {
+  margin: 0px 27.5px 10px;
+  font-size: small;
+  font-weight: 400;
+}
+
+.password-text {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 27.5px;
+}
+
+.password-text p {
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.password-text a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+.btn {
+  font-size: medium;
+  font-weight: 300;
+  display: flex;
+  margin: 2rem auto 0.5rem;
+  width: 60%;
+  justify-content: center;
+  background-color: white;
+  border-radius: 25px;
+  border: 1px solid white;
+  padding: 15px 20px;
+  color: rgb(98, 78, 221);
+  text-transform: uppercase;
+}
+
+.form-content {
+  position: absolute;
+  width: 450px;
+  height: 500px;
+  display: grid;
+  border-radius: 20px;
+  background: linear-gradient(
+    173deg,
+    #fff 0%,
+    #fff 23%,
+    rgb(98, 78, 221) 23.2%,
+    rgb(98, 78, 221) 100%
+  );
+}
+
+.signed-in-content {
+  position: absolute;
+  width: 450px;
+  height: 500px;
+  display: grid;
+  border-radius: 20px;
+  background: rgb(98, 78, 221);
+}
+
+.chat-icon {
+  margin: 6rem auto 0;
+  display: grid;
+  align-self: center;
+}
+
+.close-icon {
+  border-radius: 35px;
+  border: 1px #fff solid;
+  background: #fff;
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  top: -0.5%;
+  right: -1.5rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  place-content: center;
+}
+
+.x-icon {
+  margin: 3px;
+  width: 1rem;
+  height: 1rem;
+  align-self: center;
+}
+.form-title {
+  font-size: 2.7rem;
+  font-weight: 500;
+  padding-left: 27.5px;
+  margin: 2.5rem 0 4rem;
+  color: rgb(98, 78, 221);
+  text-transform: uppercase;
+}
+
+.success-title {
+  font-weight: 300;
+  justify-content: center;
+  display: flex;
+  margin-top: 5rem;
+}
+
+.danger-icon-hidden {
+  position: absolute;
+  left: 23.75rem;
+  transform: translateY(-135%);
+  display: none;
+}
+
+.danger-icon-show {
+  position: absolute;
+  left: 23.75rem;
+  transform: translateY(-135%);
+  display: inline;
+}
+
+#email.invalid,
+#password.invalid {
+  border: 1px solid rgb(228, 50, 34);
+  background: radial-gradient(
+    ellipse 50% 75px,
+    rgb(251, 230, 229) 0%,
+    rgb(247, 207, 206) 100%
+  );
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.remember-me {
+  display: block;
+  position: relative;
+  padding-left: 4rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: small;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 1.7rem;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px rgb(98, 78, 221) solid;
+  border-radius: 25%;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.remember-me input:checked ~ .checkmark {
+  background-color: #fff;
+}
+.remember-me input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.remember-me .checkmark:after {
+  left: 7px;
+  bottom: 5px;
+  width: 6px;
+  height: 12px;
+  border: solid rgb(98, 78, 221);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.sign-up {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-size: small;
+}
+
+.sign-up a {
+  padding-left: 5px;
+  color: #fff;
+}
+
+#email,
+#password {
+  display: grid;
+  margin: 0 auto;
+  width: 82%;
+  padding: 0.75rem;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.pwd-wrap {
+  position: relative;
+}
+
+#show-pwd {
+  position: absolute;
+  top: 50%;
+  right: 2.5rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  background: #fff;
+}
+
+#show-pwd svg {
+  width: 100%;
+  height: auto;
 }

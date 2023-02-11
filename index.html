@@ -6,13 +6,71 @@
     <title>UX/UI Developer Take-Home Coding Challenge</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <!-- Start delete the lines between this -->
-    <h1 style="text-align: center">Thank you for taking the time to complete this coding challenge</h1>
+    <div class="form-content">
+      <span>
+        <form action="signed-in.html" method="post" id="form">
+          <h2 class="form-title">Sign in</h2>
+          <p class="email-text">Email Address</p>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            onblur="validateEmail();"
+          />
+          <img
+            src="assets/danger-circle-icon.svg"
+            alt="danger-circle-icon"
+            class="danger-icon-hidden"
+          />
+          <div class="password-text">
+            <p>Password</p>
+            <a href="#">Forgot your password?</a>
+          </div>
+          <div class="pwd-wrap">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              onblur="validatePassword();"
+            />
+            <button type="button" id="show-pwd">
+              <img src="assets/eye-show-icon.svg" alt="eye-show-icon" />
+            </button>
+          </div>
+          <img
+            src="assets/danger-circle-icon.svg"
+            alt="danger-circle-icon"
+            class="danger-icon-hidden"
+          />
+          <label class="remember-me">
+            Remember me
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <button
+            type="submit"
+            value="button"
+            class="btn"
+            onclick="event.preventDefault(); validateForm();"
+          >
+            Continue
+          </button>
+          <div class="sign-up">
+            <p>Don't have an account?<a href="#">Sign up</a></p>
+          </div>
+        </form>
+      </span>
+    </div>
+
     <!-- End delete the lines between this -->
 
     <script src="js/validator.js"></script>
